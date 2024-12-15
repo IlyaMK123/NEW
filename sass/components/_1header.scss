@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    padding: 25px 0px 25px 0px;
+
+    color: $accent-color;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  &__span {
+    color: $primary-text-color;
+  }
+  &__list {
+    display: flex;
+
+    margin-left: 93px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

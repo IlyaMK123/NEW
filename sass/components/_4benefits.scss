@@ -1,0 +1,34 @@
+.benefits {
+  margin-top: 94px;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    & svg {
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      padding: 25px 100px;
+      width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      transition-duration: 250ms;
+    }
+    & svg:hover {
+      background-color: $accent-color;
+    }
+  }
+
+  &__h {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+  }
+
+  &__text {
+    color: $secondary-text-color;
+  }
+}

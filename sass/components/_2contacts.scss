@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    color: $secondary-text-color;
+    fill: $secondary-text-color;
+    &:hover {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}
+
+.mail {
+}
+.phone {
+}
